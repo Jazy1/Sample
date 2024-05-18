@@ -21,7 +21,7 @@
 	<meta name="msapplication-navbutton-color" content="#0D1A1C">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
-	<title>Study.ai - Add Quiz</title>
+	<title>Study.ai - Take Quiz</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="{{asset('public/../images/fav-icon/icon.png')}}">
 	<!-- Bootstrap CSS -->
@@ -77,11 +77,7 @@
 						<li><div class="nav-title">Listing</div></li>
 						<li class="plr"><a href="properties-list.html" class="d-flex w-100 align-items-center">
 							<img src="{{asset('public/images/icon/icon_6.svg')}}" alt="">
-							<span>My Properties</span>
-						</a></li>
-						<li class="plr"><a href="add-Quiz.html" class="d-flex w-100 align-items-center active">
-							<img src="{{asset('public/images/icon/icon_7_active.svg')}}" alt="">
-							<span>New Quiz</span>
+							<span>Pending Quizes</span>
 						</a></li>
 						<li class="plr"><a href="favourites.html" class="d-flex w-100 align-items-center">
 							<img src="{{asset('public/images/icon/icon_8.svg')}}" alt="">
@@ -127,7 +123,7 @@
 				<!-- ************************ Header **************************** -->
 				<header class="dashboard-header">
 					<div class="d-flex align-items-center justify-content-end">
-						<h4 class="m0 d-none d-lg-block">Add New Quiz</h4>
+						<h4 class="m0 d-none d-lg-block">Take Quiz</h4>
 					</div>
 				</header>
 				<!-- End Header -->
@@ -135,13 +131,13 @@
 				<div class="bg-white card-box border-20"  id="arrow-up-destination">
                     <h4 class="dash-title-three">Overview</h4>
                     <div class="dash-input-wrapper mb-30">
-                        <label for="">Quiz Title*</label>
-                        <input type="text" placeholder="Your Quiz Name">
+                        <label for="">Quiz Title</label> {{--quiz title here--}}
+
                     </div>
                     <!-- /.dash-input-wrapper -->
                     <div class="dash-input-wrapper mb-30">
-                        <label for="">Rules*</label>
-                        <textarea class="size-lg" placeholder="Write about Quiz..."></textarea>
+                        <label for="">Rules</label>
+                        <label for="">--------</label>    {{--quiz rules here--}}
                     </div>
                 </div>
 
@@ -150,36 +146,30 @@
 
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Question*</label>
-                        <input type="text" placeholder="Your Quiz Name" name="question">
+                        <label for="">question here ?</label>
                     </div>
                     <!-- /.dash-input-wrapper -->
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Qption1</label>
-                        <input type="text" class="" name="">
-
+                        <input type="radio" class="" name="">
+                        <br>
                         <label for="">Qption2</label>
-                        <input type="text" class="" name="">
-
+                        <input type="radio" class="" name="">
+                        <br>
                         <label for="">Qption3</label>
-                        <input type="text" class="" name="">
-
+                        <input type="radio" class="" name="">
+                        <br>
                         <label for="">Qption4</label>
-                        <input type="text" class="" name="">
+                        <input type="radio" class="" name="">
 
                         <br>
-                        <a href="#" class="dash-btn-two tran3s me-3">Delete Question</a>
                     </div>
 
                 </div>
-
-                <div class="button-group d-inline-flex align-items-center mt-30">
-					<a href="#" class="dash-btn-two tran3s me-3">Add Question</a>
-
-				</div>
                 <br>
 
 				<div class="button-group d-inline-flex align-items-center mt-30">
-					<a href="#" class="dash-btn-two tran3s me-3">Upload Quiz</a>
+					<a href="#" class="dash-btn-two tran3s me-3">Submit Quiz</a>
 					<a href="#" class="dash-cancel-btn tran3s">Cancel</a>
 				</div>
 			</div>

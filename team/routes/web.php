@@ -7,6 +7,10 @@ Route::get('/addquiz', function () {
     return view('teacher.addquiz');
 });
 
+Route::get('/takequiz', function () {
+    return view('student.takequiz');
+});
+
 
 // teachers route
 Route::get('/teacher', function () {
