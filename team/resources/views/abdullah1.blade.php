@@ -36,15 +36,6 @@
 
 <body>
 	<div class="main-page-wrapper">
-		<!-- ===================================================
-			Loading Transition
-		==================================================== -->
-		{{-- <div id="preloader">
-			<div id="ctn-preloader" class="ctn-preloader">
-				<div class="icon"><img src="{{asset('public/../images/loader.gif')}}" alt="" class="m-auto d-block" width="64"></div>
-			</div>
-		</div> --}}
-
 		<!--
 		=============================================
 			Dashboard Aside Menu
@@ -141,9 +132,7 @@
 				</header>
 				<!-- End Header -->
 
-				<h2 class="main-title d-block d-lg-none">Add New Quiz</h2>
-
-				<div class="bg-white card-box border-20">
+				<div class="bg-white card-box border-20"  id="arrow-up-destination">
                     <h4 class="dash-title-three">Overview</h4>
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Quiz Title*</label>
@@ -176,6 +165,9 @@
 
                         <label for="">Qption4</label>
                         <input type="text" class="" name="">
+
+                        <br>
+                        <a href="#" class="dash-btn-two tran3s me-3">Delete Question</a>
                     </div>
 
                 </div>
@@ -187,7 +179,7 @@
                 <br>
 
 				<div class="button-group d-inline-flex align-items-center mt-30">
-					<a href="#" class="dash-btn-two tran3s me-3">Submit Quiz</a>
+					<a href="#" class="dash-btn-two tran3s me-3">Upload Quiz</a>
 					<a href="#" class="dash-cancel-btn tran3s">Cancel</a>
 				</div>
 			</div>
@@ -217,7 +209,7 @@
 
 
 		<button class="scroll-top">
-			<i class="bi bi-arrow-up-short"></i>
+			<a href="#arrow-up-destination"><i class="bi bi-arrow-up-short"></i></a>
 		</button>
 
 
