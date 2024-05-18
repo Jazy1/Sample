@@ -58,3 +58,8 @@ Route::prefix("teachers")->group(function(){
         Route::post('login', [TeacherController::class, "login"])->name("teachers.login");
     });
 });
+
+
+Route::get('/chat', function () {
+    return view('chatingMeeting');
+});
