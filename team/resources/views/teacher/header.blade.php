@@ -21,7 +21,7 @@
 	<meta name="msapplication-navbutton-color" content="#0D1A1C">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
-	<title>Homy-Real Estate HTML5 Template & Dashboard</title>
+	<title>Teachers Dashboard | Study AI </title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="../images/fav-icon/icon.png">
 	<!-- Bootstrap CSS -->
@@ -40,15 +40,28 @@
 </head>
 
 <body>
+	<!--Start of Tawk.to Script-->
+	<script type="text/javascript">
+		var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+		(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/664876cd981b6c56477211c0/1hu5h05nc';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+		})();
+	</script>
+	<!--End of Tawk.to Script-->
 	<div class="main-page-wrapper">
 		<!-- ===================================================
 			Loading Transition
 		==================================================== -->
-		<div id="preloader">
+		{{-- <div id="preloader">
 			<div id="ctn-preloader" class="ctn-preloader">
 				<div class="icon"><img src="../images/loader.gif" alt="" class="m-auto d-block" width="64"></div>
 			</div>
-		</div>
+		</div> --}}
 
 		<!--
 		=============================================
