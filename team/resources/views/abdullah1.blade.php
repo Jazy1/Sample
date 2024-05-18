@@ -9,6 +9,7 @@
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Homy-Real Estate HTML5 Template & Dashboard">
+	<meta name='og:image' content="{{asset('public/../images/asset/ogg.png')}}">
 	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- For Resposive Device -->
@@ -22,7 +23,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
 	<title>Study.ai - Add Quiz</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="{{asset('public/../images/fav-icon/icon.png')}}">
+	<link rel="icon" type="image/png" sizes="56x56" href="../{{asset('public/images/fav-icon/icon.png')}}">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('public/../css/bootstrap.min.css')}}" media="all">
 	<!-- Main style sheet -->
@@ -32,7 +33,7 @@
 
 	<!-- Fix Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
-			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js')}}"></script>
+			<script src="{{('public/http://html5shiv.googlecode.com/svn/trunk/html5.js')}}"></script>
 			<script src="vendor/html5shiv.js')}}"></script>
 			<script src="vendor/respond.js')}}"></script>
 		<![endif]-->
