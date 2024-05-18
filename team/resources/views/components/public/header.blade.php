@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <header class="theme-main-menu menu-overlay menu-style-four sticky-menu">
     <div class="inner-content gap-two">
         <div class="top-header position-relative">
@@ -114,3 +115,8 @@
         </div> <!--/.top-header-->
     </div> <!-- /.inner-content -->
 </header> 
+=======
+<div>
+    <!-- Knowing is not enough; we must apply. Being willing is not enough; we must do. - Leonardo da Vinci -->
+</div>
+>>>>>>> a41b019b999964254b80f52e78c9cf5911d2fd02
