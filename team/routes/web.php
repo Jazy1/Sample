@@ -17,6 +17,10 @@ Route::get('/teacher', function () {
     return view('teacher.content');
 })->name('teachers.dashboard');
 
+Route::get('/student', function () {
+    return view('student.content');
+})->name('students.dashboard');
+
 Route::get('/create-classroom', function () {
     return view('teacher.classroom');
 });
