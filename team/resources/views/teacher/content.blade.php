@@ -141,7 +141,7 @@
 				<!-- ************************ Header **************************** -->
 				<header class="dashboard-header">
 					<div class="d-flex align-items-center justify-content-end">
-						<h4 class="m0 d-none d-lg-block">Add New Property</h4>
+						<h4 class="m0 d-none d-lg-block">Teachers</h4>
 						<button class="dash-mobile-nav-toggler d-block d-md-none me-auto">
 							<span></span>
 						</button>
@@ -213,7 +213,7 @@
 				<h2 class="main-title d-block d-lg-none">Add New Property</h2>
 
 				<div class="bg-white card-box border-20">
-                    <h4 class="dash-title-three">Overview</h4>
+                    <h4 class="dash-title-three">aaa</h4>
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Property Title*</label>
                         <input type="text" placeholder="Your Property Name">

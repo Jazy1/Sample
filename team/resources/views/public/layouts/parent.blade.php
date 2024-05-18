@@ -39,20 +39,20 @@
 				<div class="icon"><img src="images/loader.gif" alt="" class="m-auto d-block" width="64"></div>
 			</div>
 		</div>
-
+		{{-- <h1>hello</h1> --}}
 
         <!-- ################### Search Modal ####################### -->
         <!-- Modal -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        {{-- <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen modal-dialog-centered">
                 <div class="modal-content d-flex justify-content-center">
-                    <form action="{{ route("public.listings") }}" method="GET">
+                    <form action="" method="GET">
                         <input type="text" name="keywords" placeholder="Buy Apartments, Rent Condos, Sell Houses">
                         <button><i class="fa-light fa-arrow-right-long"></i></button>
                     </form>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
 		@php
@@ -60,7 +60,7 @@
 		@endphp
 		
 		@php
-			$buyerTab = Session::has('buyerSuccess') && Session::get('buyerFrom') ? "buyerSignup" : "buyerLogin";
+			$studentTab = Session::has('studentSuccess') && Session::get('studentFrom') ? "studentSignup" : "studentLogin";
 		@endphp
 		<!-- 
 		=============================================
@@ -78,7 +78,7 @@
 			Footer Three
 		=====================================================
 		-->
-		<x-public.footer />
+		{{-- <x-public.footer /> --}}
         <!-- /.footer-three -->
 
 
@@ -92,10 +92,10 @@
 						<div class="form-wrapper m-auto">
 							<ul class="nav nav-tabs w-100" role="tablist">
 								<li class="nav-item" role="presentation">
-									<button class="nav-link {{ $tab == "login" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc1" role="tab">Landlord Login</button>
+									<button class="nav-link {{ $tab == "login" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc1" role="tab">Teacher Login</button>
 								</li>
 								<li class="nav-item" role="presentation">
-									<button class="nav-link {{ $tab == "signup" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc2" role="tab">Landlord Signup</button>
+									<button class="nav-link {{ $tab == "signup" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc2" role="tab">Teacher Signup</button>
 								</li>
 							</ul>
 
@@ -107,7 +107,7 @@
                                             <button  data-bs-toggle="tab" data-bs-target="#fc2" role="tab">Sign up</button>
                                         </p> --}}
 									</div>
-									<form action="{{ route("landlords.login") }} " method="POST">
+									<form action=" {{ route("teachers.login") }} " method="POST">
 										@csrf
 										<div class="row">
 											<div class="col-12">
@@ -163,7 +163,7 @@
 										<h2>Register</h2>
 										{{-- <p class="fs-20 color-dark">Already have an account? <a href="#">Login</a></p> --}}
 									</div>
-									<form action=" {{route("landlords.store")}} " method="POST">
+									<form action=" {{ route("teachers.store") }} " method="POST">
 										@csrf
 										<div class="row">
 											<div class="col-12">
@@ -180,13 +180,13 @@
 													<span class="text-danger">@error('email'){{$message}}@enderror</span>
 												</div>
 											</div>
-                                            <div class="col-12">
+                                            {{-- <div class="col-12">
 												<div class="input-group-meta position-relative mb-25">
 													<label>Phone*</label>
 													<input type="tel" id="phoneInput" placeholder="+44 xx xxxx xxxx" name="phone" required>
 													<span class="text-danger">@error('phone'){{$message}}@enderror</span>
 												</div>
-											</div>
+											</div> --}}
 											<div class="col-12">
 												<div class="input-group-meta position-relative mb-20">
 													<label>Password*</label>
@@ -264,7 +264,7 @@
             </div>
         </div>
 
-        <!-- ################### Buyer Login Modal ####################### -->
+        <!-- ################### Student Login Modal ####################### -->
         <!-- Modal -->
         <div class="modal fade" id="buyerLoginModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen modal-dialog-centered">
@@ -274,34 +274,34 @@
 						<div class="form-wrapper m-auto">
 							<ul class="nav nav-tabs w-100" role="tablist">
 								<li class="nav-item" role="presentation">
-									<button class="nav-link {{ $buyerTab == "buyerLogin" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc3" role="tab">Buyer Login</button>
+									<button class="nav-link {{ $studentTab == "studentLogin" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc3" role="tab">Student Login</button>
 								</li>
 								<li class="nav-item" role="presentation">
-									<button class="nav-link {{ $buyerTab == "buyerSignup" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc4" role="tab">Buyer Signup</button>
+									<button class="nav-link {{ $studentTab == "studentSignup" ? "active" : "" }}" data-bs-toggle="tab" data-bs-target="#fc4" role="tab">Student Signup</button>
 								</li>
 							</ul>
 
 							<div class="tab-content mt-30">
-								<div class="tab-pane {{ $buyerTab == "buyerLogin" ? "show active" : " " }}" role="tabpanel" id="fc3">
+								<div class="tab-pane {{ $studentTab == "studentLogin" ? "show active" : " " }}" role="tabpanel" id="fc3">
 									<div class="text-center mb-20">
 										<h2>Welcome Back!</h2>
 									</div>
-									<form action="{{ route("buyers.login") }} " method="POST">
+									<form action=" " method="POST">
 										@csrf
 										<div class="row">
 											<div class="col-12">
 												<div class="input-group-meta position-relative mb-25">
 													<label>Email*</label>
-													<input name="buyerEmail" type="email" placeholder="fishNchips@example.com" required>
+													<input name="studentEmail" type="email" placeholder="fishNchips@example.com" required>
 												</div>
-												<span class="text-danger">@error('buyerEmail'){{$message}}@enderror</span>
+												<span class="text-danger">@error('studentEmail'){{$message}}@enderror</span>
 											</div>
 											<div class="col-12">
 												<div class="input-group-meta position-relative mb-20">
 													<label>Password*</label>
-													<input type="password" name="buyerPassword" placeholder="Enter Password" class="pass_log_id" required>
+													<input type="password" name="studentPassword" placeholder="Enter Password" class="pass_log_id" required>
 													<span class="placeholder_icon"><span class="passVicon"><img src="images/icon/icon_68.svg" alt=""></span></span>
-													<span class="text-danger">@error('buyerPassword'){{$message}}@enderror</span>
+													<span class="text-danger">@error('studentPassword'){{$message}}@enderror</span>
 												</div>
 											</div>
 											<div class="col-12">
@@ -315,19 +315,19 @@
 											</div>
 											<div class="col-12">
 												<button class="btn-two w-100 text-uppercase d-block mt-20">Login</button>
-												@if (Session::has('buyerSuccess'))
+												@if (Session::has('studentSuccess'))
 													<div class="alert alert-success some-space-upNdown" role="alert">
 														<center style="">
-															{{ session("buyerSuccess") }}
+															{{ session("studentSuccess") }}
 															<br>
 														</center> 
 													</div>
 												@endif
 
-												@if (Session::has('buyerFail'))
+												@if (Session::has('studentFail'))
 													<div class="alert alert-danger some-space-upNdown" role="alert">
 														<center style="">
-															{{ session("buyerFail") }}
+															{{ session("studentFail") }}
 															<br>
 														</center> 
 													</div>
@@ -337,40 +337,33 @@
 									</form>
 								</div>
 								<!-- /.tab-pane -->
-								<div class="tab-pane {{ $buyerTab == "buyerSignup" ? "show active" : " " }}" role="tabpanel" id="fc4">
+								<div class="tab-pane {{ $studentTab == "studentSignup" ? "show active" : " " }}" role="tabpanel" id="fc4">
 									<div class="text-center mb-20">
 										<h2>Register</h2>
 									</div>
-									<form action=" {{route("buyers.store")}} " method="POST">
+									<form action=" " method="POST">
 										@csrf
 										<div class="row">
 											<div class="col-12">
 												<div class="input-group-meta position-relative mb-25">
 													<label>Name*</label>
-													<input type="text" placeholder="Mr. Fish n Chips" name="buyerName" required>
-													<span class="text-danger">@error('buyerName'){{$message}}@enderror</span>
+													<input type="text" placeholder="Mr. Fish n Chips" name="studentName" required>
+													<span class="text-danger">@error('studentName'){{$message}}@enderror</span>
 												</div>
 											</div>
 											<div class="col-12">
 												<div class="input-group-meta position-relative mb-25">
 													<label>Email*</label>
-													<input type="email" placeholder="fishnchips@example.com" name="buyerEmail" required>
-													<span class="text-danger">@error('buyerEmail'){{$message}}@enderror</span>
-												</div>
-											</div>
-                                            <div class="col-12">
-												<div class="input-group-meta position-relative mb-25">
-													<label>Phone*</label>
-													<input type="tel" id="phoneInput" placeholder="+44 xx xxxx xxxx" name="buyerPhone" required>
-													<span class="text-danger">@error('buyerPhone'){{$message}}@enderror</span>
+													<input type="email" placeholder="fishnchips@example.com" name="studentEmail" required>
+													<span class="text-danger">@error('studentEmail'){{$message}}@enderror</span>
 												</div>
 											</div>
 											<div class="col-12">
 												<div class="input-group-meta position-relative mb-20">
 													<label>Password*</label>
-													<input type="password" placeholder="Enter Password" class="pass_log_id" name="buyerPassword" required>
+													<input type="password" placeholder="Enter Password" class="pass_log_id" name="studentPassword" required>
 													<span class="placeholder_icon"><span class="passVicon"><img src="images/icon/icon_68.svg" alt=""></span></span>
-													<span class="text-danger">@error('buyerPassword'){{$message}}@enderror</span>
+													<span class="text-danger">@error('studentPassword'){{$message}}@enderror</span>
 												</div>
 											</div>
 											<div class="col-12">
@@ -389,19 +382,19 @@
 											<div class="col-12">
 												<button class="btn-two w-100 text-uppercase d-block mt-20">Sign Up</button>
 												
-												@if (Session::has('buyerSuccess'))
+												@if (Session::has('studentSuccess'))
 													<div class="alert alert-success some-space-upNdown" role="alert">
 														<center style="">
-															{{ session("buyerSuccess") }}
+															{{ session("studentSuccess") }}
 															<br>
 														</center> 
 													</div>
 												@endif
 
-												@if (Session::has('buyerFail'))
+												@if (Session::has('studentFail'))
 													<div class="alert alert-danger some-space-upNdown" role="alert">
 														<center style="">
-															{{ session("buyerFail") }}
+															{{ session("studentFail") }}
 															<br>
 														</center> 
 													</div>
@@ -438,7 +431,7 @@
 				});
 			</script>
 		@endif
-		@if (Session::has('buyerSuccess') || Session::has('buyerFail'))
+		@if (Session::has('studentSuccess') || Session::has('studentFail'))
 			<script>
 				document.addEventListener('DOMContentLoaded', function() {
 					var myModal = new bootstrap.Modal(document.getElementById('buyerLoginModal'))

@@ -1,7 +1,7 @@
 		
 @extends('public.layouts.parent')
 
-@section('title', "Move Right® | The right move!")
+@section('title', "Study AI")
 
 @section('content')
 
@@ -10,7 +10,7 @@
 		Hero Banner
 	============================================== 
 	-->
-	<div class="hero-banner-four position-relative">
+	{{-- <div class="hero-banner-four position-relative">
 		<div class="position-relative main-bg position-relative z-1 pt-150 xl-pt-120 md-pt-60 pb-150 xl-pb-120 md-pb-80">
 			<div class="hero-slider-one m0">
 				<div class="item m0"><div class="hero-img" style="background-image: url({{ asset("images/media/img_32.jpg") }});"></div></div>
@@ -135,7 +135,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.hero-banner-four -->
 
 	<!-- 
@@ -143,7 +143,7 @@
 		Property Listing Two
 	============================================== 
 	-->
-	<div class="property-listing-five mt-170 xl-mt-120">
+	{{-- <div class="property-listing-five mt-170 xl-mt-120">
 		<div class="container container-large">
 			<div class="position-relative">
 				<div class="title-one mb-25 lg-mb-10 wow fadeInUp">
@@ -214,7 +214,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.property-listing-five -->
 
 
@@ -223,7 +223,7 @@
 		Property Listing One
 	============================================== 
 	-->
-	<div class="property-listing-one mt-170 xl-mt-120">
+	{{-- <div class="property-listing-one mt-170 xl-mt-120">
 		<div class="container container-large">
 			<div class="position-relative">
 				<div class="title-one mb-25 lg-mb-10 wow fadeInUp">
@@ -284,7 +284,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.property-listing-one -->
 
 	<!--
@@ -292,7 +292,7 @@
 		BLock Feature Nine
 	=====================================================
 	-->
-	<div class="block-feature-nine bg-pink-two image-bg position-relative z-1 mt-170 xl-mt-120 pt-85 pb-110 xl-pb-80">
+	{{-- <div class="block-feature-nine bg-pink-two image-bg position-relative z-1 mt-170 xl-mt-120 pt-85 pb-110 xl-pb-80">
 		<div class="container container-large">
 			<div class="position-relative">
 				<div class="row">
@@ -336,7 +336,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.block-feature-nine -->
 
 
@@ -346,7 +346,7 @@
 		Category Section Two
 	============================================== 
 	-->
-	<div class="category-section-two mt-170 xl-mt-120">
+	{{-- <div class="category-section-two mt-170 xl-mt-120">
 		<div class="container container-large">
 			<div class="position-relative">
 				<div class="title-one text-center text-lg-start mb-60 xl-mb-40 lg-mb-20 wow fadeInUp">
@@ -374,7 +374,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.category-section-two -->
 
 
@@ -383,7 +383,7 @@
 		Address Banner
 	=====================================================
 	-->
-	<div class="address-banner wow fadeInUp mt-120 lg-mt-80">
+	{{-- <div class="address-banner wow fadeInUp mt-120 lg-mt-80">
 		<div class="container container-large">
 			<div class="d-flex flex-wrap justify-content-center justify-content-lg-between">
 				<div class="block position-relative z-1 mt-25">
@@ -422,7 +422,7 @@
 				<!-- /.block -->
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.address-banner -->
 
 
@@ -433,7 +433,7 @@
 		Fancy Banner Eight
 	=====================================================
 	-->
-	<div class="fancy-banner-eight wow fadeInUp mt-160 xl-mt-120">
+	{{-- <div class="fancy-banner-eight wow fadeInUp mt-160 xl-mt-120">
 		<div class="container container-large">
 			<div class="bg-wrapper bg-pink-two overflow-hidden position-relative z-1">
 				<div class="row align-items-end">
@@ -457,7 +457,7 @@
 				
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.fancy-banner-eight -->
 
 @endsection
