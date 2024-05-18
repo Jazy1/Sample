@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Teacher;
 use App\Http\Requests\StoreTeacherRequest;
 use App\Http\Requests\UpdateTeacherRequest;
+use App\Models\post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -14,13 +15,13 @@ class TeacherController extends Controller
     public function login(Request $request){
         $email = $request->input('email');
         $password = $request->input('password');
-        
+
         $teacher = Teacher::where('email', $email)->first();
-    
+
         if ($teacher) {
             if (password_verify($password, $teacher->password)) {
                 session()->put(["LoggedTeacher" => $teacher->id]);
-                
+
                 return redirect()->route("teachers.dashboard");
 
             } else {
@@ -44,8 +45,13 @@ class TeacherController extends Controller
      */
     public function create()
     {
-        //
+        $teacher_posts = new post;
+        $teacher_posts->content = $request['content'];
+        $teacher_posts->file = $request['file'];
+        $teacher_posts->objects = $request['objects'];
+        $teacher_posts->save();
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -58,7 +64,7 @@ class TeacherController extends Controller
             'password' => Hash::make($request->password),
             // 'phone' => $request->phone,
         ]);
-    
+
         $teacher->save();
 
         return redirect()->route('public.home')->with([

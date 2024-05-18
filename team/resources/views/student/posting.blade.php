@@ -84,32 +84,12 @@
 				<div class="bg-white card-box border-20">
                     <h4 class="dash-title-three">Create Post</h4>
                     <!-- /.dash-input-wrapper -->
+            <form method="post">
+                @csrf
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Content*</label>
-                        <textarea class="size-lg" placeholder="Write about property..."></textarea>
+                        <textarea class="size-lg" name="Student_content" placeholder="Write about property..."></textarea>
                 </div>
-
-				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three">Photo & Video Attachment</h4>
-                    <div class="dash-input-wrapper mb-20">
-                        <label for="">File Attachment*</label>
-
-                        <div class="attached-file d-flex align-items-center justify-content-between mb-15">
-                            <span>PorpertyImage_01.jpg</span>
-                            <a href="#" class="remove-btn"><i class="bi bi-x"></i></a>
-                        </div>
-						<div class="attached-file d-flex align-items-center justify-content-between mb-15">
-                            <span>PorpertyImage_02.jpg</span>
-                            <a href="#" class="remove-btn"><i class="bi bi-x"></i></a>
-                        </div>
-                    </div>
-                    <!-- /.dash-input-wrapper -->
-                    <div class="dash-btn-one d-inline-block position-relative me-3">
-                        <i class="bi bi-plus"></i>
-                        Upload File
-                        <input type="file" id="uploadCV" name="uploadCV" placeholder="">
-                    </div>
-                    <small>Upload file .jpg,  .png,  .mp4</small>
 				</div>
 				<!-- /.card-box -->
 
@@ -117,6 +97,7 @@
 					<a href="#" class="dash-btn-two tran3s me-3">Submit</a>
 					<a href="#" class="dash-cancel-btn tran3s">Cancel</a>
 				</div>
+            </form>
 
 			</div>
 		</div>
