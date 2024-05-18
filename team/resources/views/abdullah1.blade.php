@@ -9,7 +9,6 @@
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Homy-Real Estate HTML5 Template & Dashboard">
-	<meta name='og:image' content='../{{assets('public/images/assets/ogg.png'>
 	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- For Resposive Device -->
@@ -21,15 +20,15 @@
 	<meta name="msapplication-navbutton-color" content="#0D1A1C">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
-	<title>Homy-Real Estate HTML5 Template & Dashboard</title>
+	<title>Study.ai - Add Quiz</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="../{{assets('public/images/fav-icon/icon.png">
+	<link rel="icon" type="image/png" sizes="56x56" href="{{asset('public/../images/fav-icon/icon.png')}}">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" type="text/css" href="{{assets('public/../css/bootstrap.min.css')}}" media="all">
+	<link rel="stylesheet" type="text/css" href="{{asset('public/../css/bootstrap.min.css')}}" media="all">
 	<!-- Main style sheet -->
-	<link rel="stylesheet" type="text/css" href="{{assets('public/../css/style.css')}}" media="all">
+	<link rel="stylesheet" type="text/css" href="{{asset('public/../css/style.css')}}" media="all">
 	<!-- responsive style sheet -->
-	<link rel="stylesheet" type="text/css" href="{{assets('public/../css/responsive.css')}}" media="all">
+	<link rel="stylesheet" type="text/css" href="{{asset('public/../css/responsive.css')}}" media="all">
 
 	<!-- Fix Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
@@ -46,7 +45,7 @@
 		==================================================== -->
 		<div id="preloader">
 			<div id="ctn-preloader" class="ctn-preloader">
-				<div class="icon"><img src="../{{assets('public/images/loader.gif" alt="" class="m-auto d-block" width="64"></div>
+				<div class="icon"><img src="../{{asset('public/images/loader.gif')}}" alt="" class="m-auto d-block" width="64"></div>
 			</div>
 		</div>
 
@@ -59,54 +58,54 @@
 			<div class="position-relative">
 				<div class="logo d-md-block d-flex align-items-center justify-content-between plr bottom-line pb-30">
 					<a href="dashboard-index.html">
-						<img src="../{{assets('public/images/logo/logo_01.svg" alt="">
+						<img src="../{{asset('public/images/logo/logo_01.svg')}}" alt="">
 					</a>
 					<button class="close-btn d-block d-md-none"><i class="fa-light fa-circle-xmark"></i></button>
 				</div>
 				<nav class="dasboard-main-nav pt-30 pb-30 bottom-line">
 					<ul class="style-none">
 						<li class="plr"><a href="dashboard-index.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_1.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_1.svg')}}" alt="">
 							<span>Dashboard</span>
 						</a></li>
 						<li class="plr"><a href="message.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_2.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_2.svg')}}" alt="">
 							<span>Message</span>
 						</a></li>
 						<li class="bottom-line pt-30 lg-pt-20 mb-40 lg-mb-30"></li>
 						<li><div class="nav-title">Profile</div></li>
 						<li class="plr"><a href="profile.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_3.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_3.svg')}}" alt="">
 							<span>Profile</span>
 						</a></li>
 						<li class="plr"><a href="account-settings.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_4.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_4.svg')}}" alt="">
 							<span>Account Settings</span>
 						</a></li>
 						<li class="plr"><a href="membership.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_5.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_5.svg')}}" alt="">
 							<span>Membership</span>
 						</a></li>
 						<li class="bottom-line pt-30 lg-pt-20 mb-40 lg-mb-30"></li>
 						<li><div class="nav-title">Listing</div></li>
 						<li class="plr"><a href="properties-list.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_6.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_6.svg')}}" alt="">
 							<span>My Properties</span>
 						</a></li>
 						<li class="plr"><a href="add-property.html" class="d-flex w-100 align-items-center active">
-							<img src="{{assets('public/images/icon/icon_7_active.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_7_active.svg')}}" alt="">
 							<span>New Quiz</span>
 						</a></li>
 						<li class="plr"><a href="favourites.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_8.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_8.svg')}}" alt="">
 							<span>Favourites</span>
 						</a></li>
 						<li class="plr"><a href="saved-search.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_9.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_9.svg')}}" alt="">
 							<span>Saved Search</span>
 						</a></li>
 						<li class="plr"><a href="review.html" class="d-flex w-100 align-items-center">
-							<img src="{{assets('public/images/icon/icon_10.svg" alt="">
+							<img src="{{asset('public/images/icon/icon_10.svg')}}" alt="">
 							<span>Reviews</span>
 						</a></li>
 					</ul>
@@ -123,7 +122,7 @@
 
 				<div class="plr">
 					<a href="#" class="d-flex w-100 align-items-center logout-btn">
-						<div class="icon tran3s d-flex align-items-center justify-content-center rounded-circle"><img src="{{assets('public/images/icon/icon_41.svg" alt=""></div>
+						<div class="icon tran3s d-flex align-items-center justify-content-center rounded-circle"><img src="{{asset('public/images/icon/icon_41.svg')}}" alt=""></div>
 						<span>Logout</span>
 					</a>
 				</div>
@@ -147,11 +146,11 @@
 						</button>
 						<form action="#" class="search-form ms-auto">
 							<input type="text" placeholder="Search here..">
-							<button><img src="{{assets('public/../{{assets('public/images/lazy.svg')}}" data-src="{{assets('public/{{assets('public/images/icon/icon_43.svg')}}" alt="" class="lazy-img m-auto"></button>
+							<button><img src="{{asset('public/../images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_43.svg')}}" alt="" class="lazy-img m-auto"></button>
 						</form>
 						<div class="profile-notification position-relative dropdown-center ms-3 ms-md-5 me-4">
 							<button class="noti-btn dropdown-toggle" type="button" id="notification-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-								<img src="{{assets('public/../{{assets('public/images/lazy.svg')}}" data-src=""{{assets('public/{{assets('public/images/icon/icon_11.svg" alt="" class="lazy-img')}}">
+								<img src="{{asset('public/../images/lazy.svg')}}" data-src=""{{asset('public/images/icon/icon_11.svg')}}" alt="" class="lazy-img')}}">
 								<div class="badge-pill"></div>
 							</button>
 							<ul class="dropdown-menu" aria-labelledby="notification-dropdown">
@@ -159,21 +158,21 @@
 									<h4>Notification</h4>
 									<ul class="style-none notify-list">
 										<li class="d-flex align-items-center unread">
-											<img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_36.svg" alt="" class="lazy-img icon">
+											<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_36.svg')}}" alt="" class="lazy-img icon">
 											<div class="flex-fill ps-2">
 												<h6>You have 3 new mails</h6>
 												<span class="time">3 hours ago</span>
 											</div>
 										</li>
 										<li class="d-flex align-items-center">
-											<img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_37.svg" alt="" class="lazy-img icon">
+											<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_37.svg')}}" alt="" class="lazy-img icon">
 											<div class="flex-fill ps-2">
 												<h6>Your listing post has been approved</h6>
 												<span class="time">1 day ago</span>
 											</div>
 										</li>
 										<li class="d-flex align-items-center unread">
-											<img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_38.svg" alt="" class="lazy-img icon">
+											<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_38.svg')}}" alt="" class="lazy-img icon">
 											<div class="flex-fill ps-2">
 												<h6>Your meeting is cancelled</h6>
 												<span class="time">3 days ago</span>
@@ -188,19 +187,19 @@
 						</div>
 						<div class="user-data position-relative">
 							<button class="user-avatar online position-relative rounded-circle dropdown-toggle" type="button" id="profile-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-								<img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/avatar_01.jpg')}}" alt="" class="lazy-img">
+								<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/avatar_01.jpg')}}" alt="" class="lazy-img">
 							</button>
 							<!-- /.user-avatar -->
 							<div class="user-name-data">
 								<ul class="dropdown-menu" aria-labelledby="profile-dropdown">
 									<li>
-										<a class="dropdown-item d-flex align-items-center" href="profile.html"><img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_23.svg" alt="" class="lazy-img"><span class="ms-2 ps-1">Profile</span></a>
+										<a class="dropdown-item d-flex align-items-center" href="profile.html"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_23.svg')}}" alt="" class="lazy-img"><span class="ms-2 ps-1">Profile</span></a>
 									</li>
 									<li>
-										<a class="dropdown-item d-flex align-items-center" href="account-settings.html"><img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_24.svg" alt="" class="lazy-img"><span class="ms-2 ps-1">Account Settings</span></a>
+										<a class="dropdown-item d-flex align-items-center" href="account-settings.html"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_24.svg')}}" alt="" class="lazy-img"><span class="ms-2 ps-1">Account Settings</span></a>
 									</li>
 									<li>
-										<a class="dropdown-item d-flex align-items-center" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_25.svg" alt="" class="lazy-img"><span class="ms-2 ps-1">Delete Account</span></a>
+										<a class="dropdown-item d-flex align-items-center" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_25.svg')}}" alt="" class="lazy-img"><span class="ms-2 ps-1">Delete Account</span></a>
 									</li>
 								</ul>
 							</div>
@@ -382,7 +381,7 @@
                         Upload File
                         <input type="file" id="uploadCV" name="uploadCV" placeholder="">
                     </div>
-                    <small>Upload file .jpg')}},  .png,  .mp4</small>
+                    <small>Upload file .jpg')}},  .png')}},  .mp4</small>
 				</div>
 				<!-- /.card-box -->
 
@@ -543,7 +542,7 @@
 								<label for="">Map Location*</label>
 								<div class="position-relative">
 									<input type="text" placeholder="XC23+6XC, Moiran, N105">
-									<button class="location-pin tran3s"><img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_16.svg" alt="" class="lazy-img m-auto"></button>
+									<button class="location-pin tran3s"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_16.svg')}}" alt="" class="lazy-img m-auto"></button>
 								</div>
 								<div class="map-frame mt-30">
 
@@ -569,7 +568,7 @@
                 <div class="container">
                     <div class="remove-account-popup text-center modal-content">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						<img src="../{{assets('public/images/lazy.svg" data-src="{{assets('public/images/icon/icon_22.svg" alt="" class="lazy-img m-auto">
+						<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_22.svg')}}" alt="" class="lazy-img m-auto">
 						<h2>Are you sure?</h2>
 						<p>Are you sure to delete your account? All data will be lost.</p>
 						<div class="button-group d-inline-flex justify-content-center align-items-center pt-15">
@@ -612,10 +611,10 @@
 		<!-- Nice Select -->
 		<script src="../vendor/nice-select/jquery.nice-select.min.js')}}"></script>
 		<!-- validator js -->
-		<script src="{{assets('public/../vendor/validator.js')}}')}}"></script>
+		<script src="{{asset('public/../vendor/validator.js')}}')}}"></script>
 
 		<!-- Theme js -->
-		<script src="{{assets('public/../js/theme.js')}}')}}"></script>
+		<script src="{{asset('public/../js/theme.js')}}')}}"></script>
 	</div> <!-- /.main-page-wrapper -->
 </body>
 
