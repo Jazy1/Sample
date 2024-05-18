@@ -28,3 +28,5 @@ Route::get('/Join-classroom', function () {
 Route::get('/student-posts', function () {
     return view('student.posting');
 });
+
+// Route::post('/student-posts', [StudentController::class, 'create-post']);
