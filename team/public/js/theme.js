@@ -23,7 +23,7 @@
       });
 
       // --------------------- Add .active class to current navigation based on URL
-      var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+      var pgurl = window.location.href.substr(window.location.href.lastIndexOf("https://html.creativegigstf.com/")+1);
       $(".navbar-nav > li  a").each(function(){
       if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
       $(this).addClass("active");
@@ -452,7 +452,7 @@
 
                 // if the validator does not prevent form submit
                 if (!e.isDefaultPrevented()) {
-                    var url = "inc/contact.php";
+                    var url = "inc/contact.html";
 
                     // POST values in the background the the script URL
                     $.ajax({
