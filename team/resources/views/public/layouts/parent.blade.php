@@ -34,11 +34,11 @@
 		<!-- ===================================================
 			Loading Transition
 		==================================================== -->
-		<div id="preloader">
+		{{-- <div id="preloader">
 			<div id="ctn-preloader" class="ctn-preloader">
 				<div class="icon"><img src="images/loader.gif" alt="" class="m-auto d-block" width="64"></div>
 			</div>
-		</div>
+		</div> --}}
 		{{-- <h1>hello</h1> --}}
 
         <!-- ################### Search Modal ####################### -->
@@ -135,7 +135,7 @@
 												</div> <!-- /.agreement-checkbox -->
 											</div>
 											<div class="col-12">
-												<button class="btn-two w-100 text-uppercase d-block mt-20">Login</button>
+												<a href="{{ route("teachers.dashboard") }}" class="btn-two w-100 text-uppercase d-block mt-20">Login</a>
 												@if (Session::has('success'))
 													<div class="alert alert-success some-space-upNdown" role="alert">
 														<center style="">

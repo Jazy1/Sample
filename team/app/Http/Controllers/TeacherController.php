@@ -35,7 +35,15 @@ class TeacherController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function create(Request $request)
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
     {
         $teacher_posts = new post;
         $teacher_posts->content = $request['content'];

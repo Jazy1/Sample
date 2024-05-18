@@ -1,4 +1,4 @@
-@include('teacher.header')
+@include('student.header')
 
 		<!--
 		=============================================
@@ -10,7 +10,7 @@
 				<!-- ************************ Header **************************** -->
 				<header class="dashboard-header">
 					<div class="d-flex align-items-center justify-content-end">
-						<h4 class="m0 d-none d-lg-block">Teachers</h4>
+						<h4 class="m0 d-none d-lg-block">Students</h4>
 						<button class="dash-mobile-nav-toggler d-block d-md-none me-auto">
 							<span></span>
 						</button>
@@ -53,7 +53,7 @@
 							</ul>
 						</div>
 						<div class="d-none d-md-block me-3">
-							{{-- <a href="add-property.html" class="btn-two"><span></span> <i class="fa-thin fa-arrow-up-right"></i></a> --}}
+							{{-- <a href="add-property.html" class="btn-two"><span>Add Listing</span> <i class="fa-thin fa-arrow-up-right"></i></a> --}}
 						</div>
 						<div class="user-data position-relative">
 							<button class="user-avatar online position-relative rounded-circle dropdown-toggle" type="button" id="profile-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
