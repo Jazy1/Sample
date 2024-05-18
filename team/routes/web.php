@@ -7,3 +7,7 @@ Route::get('/addquiz', function () {
 });
 
 
+
+Route::get('/teacher', function () {
+    return view('teacher.content');
+});
