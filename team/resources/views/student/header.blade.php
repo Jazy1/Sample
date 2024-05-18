@@ -21,7 +21,7 @@
 	<meta name="msapplication-navbutton-color" content="#0D1A1C">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
-	<title>Homy-Real Estate HTML5 Template & Dashboard</title>
+	<title>Study.ai - Student Dashboard</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="../images/fav-icon/icon.png">
 	<!-- Bootstrap CSS -->
@@ -44,11 +44,11 @@
 		<!-- ===================================================
 			Loading Transition
 		==================================================== -->
-		<div id="preloader">
+		{{-- <div id="preloader">
 			<div id="ctn-preloader" class="ctn-preloader">
 				<div class="icon"><img src="../images/loader.gif" alt="" class="m-auto d-block" width="64"></div>
 			</div>
-		</div>
+		</div> --}}
 
 		<!--
 		=============================================
@@ -60,19 +60,19 @@
 				<div class="logo d-md-block d-flex align-items-center justify-content-between plr bottom-line pb-30">
 					<a href="dashboard-index.html">
 						{{--  <img src="../images/logo/logo_01.svg" alt="">  --}}
-                       <b> Teachers Portal </b>
+                       <b> Students Portal </b>
 					</a>
 					<button class="close-btn d-block d-md-none"><i class="fa-light fa-circle-xmark"></i></button>
 				</div>
 				<nav class="dasboard-main-nav pt-30 pb-30 bottom-line">
 					<ul class="style-none">
-						<li class="plr"><a href="{{ url('/teacher') }}" class="d-flex w-100 align-items-center">
+						<li class="plr"><a href="{{ url('/student') }}" class="d-flex w-100 align-items-center">
 							<img src="images/icon/icon_7_active.svg" alt="">
 							<span>Add Content</span>
 						</a></li>
-						<li class="plr"><a href="{{ url('/create-classroom') }}" class="d-flex w-100 align-items-center">
-							<img src="images/icon/icon_8.svg" alt="">
-							<span>Create Classroom</span>
+						<li class="plr"><a href="{{ url('/join-classroom') }}" class="d-flex w-100 align-items-center">
+			    				<img src="images/icon/icon_8.svg" alt="">
+							<span>Join Classroom</span>
 						</a></li>
 						<li class="plr"><a href="{{ url('/upload-posts') }}" class="d-flex w-100 align-items-center">
 							<img src="images/icon/icon_9.svg" alt="">

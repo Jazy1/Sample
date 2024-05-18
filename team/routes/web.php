@@ -19,7 +19,7 @@ Route::get('/teacher', function () {
 
 Route::get('/student', function () {
     return view('student.content');
-})->name('students.dashboard');
+});
 
 Route::get('/create-classroom', function () {
     return view('teacher.classroom');

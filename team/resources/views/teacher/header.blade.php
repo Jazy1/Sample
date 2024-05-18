@@ -6,7 +6,7 @@
 	<meta name="keywords" content="Real estate, Property sale, Property buy">
 	<meta name="description" content="Homy is a beautiful website template designed for Real Estate Agency.">
     <meta property="og:site_name" content="Homy">
-    <meta property="og:url" content="https://creativegigstf.com">
+    <meta property="og:url" content="">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Homy-Real Estate HTML5 Template & Dashboard">
 	<meta name='og:image' content='../images/assets/ogg.png'>
@@ -21,7 +21,7 @@
 	<meta name="msapplication-navbutton-color" content="#0D1A1C">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
-	<title>Homy-Real Estate HTML5 Template & Dashboard</title>
+	<title>Study.ai - Teacher Dashboard</title>
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="../images/fav-icon/icon.png">
 	<!-- Bootstrap CSS -->
@@ -44,11 +44,7 @@
 		<!-- ===================================================
 			Loading Transition
 		==================================================== -->
-		<div id="preloader">
-			<div id="ctn-preloader" class="ctn-preloader">
-				<div class="icon"><img src="../images/loader.gif" alt="" class="m-auto d-block" width="64"></div>
-			</div>
-		</div>
+
 
 		<!--
 		=============================================
