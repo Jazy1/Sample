@@ -20,7 +20,7 @@
 		Hero Banner
 	============================================== 
 	-->
-	<div class="hero-banner-four position-relative">
+	{{-- <div class="hero-banner-four position-relative">
 		<div class="position-relative main-bg position-relative z-1 pt-150 xl-pt-120 md-pt-60 pb-150 xl-pb-120 md-pb-80">
 			<div class="hero-slider-one m0">
 				<div class="item m0"><div class="hero-img" style="background-image: url({{ asset("images/media/img_32.jpg") }});"></div></div>
@@ -145,7 +145,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> --}}
 	<!-- /.hero-banner-four -->
 
 	<!-- 
