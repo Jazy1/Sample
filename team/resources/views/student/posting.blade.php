@@ -84,6 +84,8 @@
 				<div class="bg-white card-box border-20">
                     <h4 class="dash-title-three">Create Post</h4>
                     <!-- /.dash-input-wrapper -->
+            <form method="post">
+                @csrf
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Content*</label>
                         <textarea class="size-lg" name="Student_content" placeholder="Write about property..."></textarea>
@@ -95,6 +97,7 @@
 					<a href="#" class="dash-btn-two tran3s me-3">Submit</a>
 					<a href="#" class="dash-cancel-btn tran3s">Cancel</a>
 				</div>
+            </form>
 
 			</div>
 		</div>

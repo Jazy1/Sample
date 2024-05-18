@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Student;
 use App\Http\Requests\StoreStudentRequest;
 use App\Http\Requests\UpdateStudentRequest;
+use App\Models\posting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-
 class StudentController extends Controller
 {
     /**
@@ -37,7 +37,7 @@ class StudentController extends Controller
             'password' => Hash::make($request->password),
             'phone' => $request->phone,
         ]);
-    
+
         $student->save();
 
         return redirect()->route('public.home')->with([
@@ -49,9 +49,11 @@ class StudentController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Student $student)
+    public function createpost(Request $request)
     {
-        //
+        $student_posting = new posting;
+        $student_posting->Student_content = $request['Student_content'];
+        $student_posting->save();
     }
 
     /**
