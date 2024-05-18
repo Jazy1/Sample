@@ -2,9 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/addquiz', function () {
+    return view('abdullah1');
 });
+
+
 
 Route::get('/teacher', function () {
     return view('teacher.content');
