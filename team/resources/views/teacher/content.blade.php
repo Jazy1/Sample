@@ -141,7 +141,7 @@
 				<!-- ************************ Header **************************** -->
 				<header class="dashboard-header">
 					<div class="d-flex align-items-center justify-content-end">
-						<h4 class="m0 d-none d-lg-block">Add New Property</h4>
+						<h4 class="m0 d-none d-lg-block">Teachers</h4>
 						<button class="dash-mobile-nav-toggler d-block d-md-none me-auto">
 							<span></span>
 						</button>
