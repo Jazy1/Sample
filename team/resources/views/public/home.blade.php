@@ -20,7 +20,7 @@
 		Hero Banner
 	============================================== 
 	-->
-	{{-- <div class="hero-banner-four position-relative">
+	<div class="hero-banner-four position-relative">
 		<div class="position-relative main-bg position-relative z-1 pt-150 xl-pt-120 md-pt-60 pb-150 xl-pb-120 md-pb-80">
 			<div class="hero-slider-one m0">
 				<div class="item m0"><div class="hero-img" style="background-image: url({{ asset("images/media/img_32.jpg") }});"></div></div>
@@ -43,7 +43,7 @@
 							</h1>
 							<p class="fs-24 text-white pt-40 pb-30 md-pb-20 pe-xl-5">Explore our vast listings of apartments, condos, villas, lofts, houses and plots.</p>
 							<div class="d-inline-flex flex-wrap align-items-center">
-								<a href="{{ route("public.listings") }}" class="btn-two rounded-0 border-0 mt-15 me-4"><span>Explore All</span></a>
+								<a href="" class="btn-two rounded-0 border-0 mt-15 me-4"><span>Explore All</span></a>
 							</div>
 						</div>
 					</div>
@@ -59,7 +59,7 @@
 								<h4 class="mb-35 xl-mb-30">Find & Buy Now!</h4>
 								<div class="tab-content">
 									<div class="tab-pane show active" id="buy" role="tabpanel" aria-labelledby="buy-tab" tabindex="0">
-										<form action="{{ route("public.listings") }}" method="GET">
+										<form action="" method="GET">
 											<input type="hidden" name="list_in" value="sell">
 											<div class="row gx-0 align-items-center">
 												<div class="col-12">
@@ -98,7 +98,7 @@
 										</form>
 									</div>
 									<div class="tab-pane" id="rent" role="tabpanel" aria-labelledby="rent-tab" tabindex="0">
-										<form action="{{ route("public.listings") }}" method="GET">
+										<form action="" method="GET">
 											<input type="hidden" name="list_in" value="rent">
 											<div class="row gx-0 align-items-center">
 												<div class="col-12">
@@ -145,7 +145,7 @@
 				</div>
 			</div>
 		</div>
-	</div> --}}
+	</div>
 	<!-- /.hero-banner-four -->
 
 	<!-- 

@@ -52,9 +52,9 @@
 								</li>
 							</ul>
 						</div>
-						<div class="d-none d-md-block me-3">
+						{{-- <div class="d-none d-md-block me-3">
 							<a href="add-property.html" class="btn-two"><span>Add Listing</span> <i class="fa-thin fa-arrow-up-right"></i></a>
-						</div>
+						</div> --}}
 						<div class="user-data position-relative">
 							<button class="user-avatar online position-relative rounded-circle dropdown-toggle" type="button" id="profile-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
 								<img src="../images/lazy.svg" data-src="images/avatar_01.jpg" alt="" class="lazy-img">

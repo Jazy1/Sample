@@ -58,3 +58,11 @@ Route::prefix("teachers")->group(function(){
         Route::post('login', [TeacherController::class, "login"])->name("teachers.login");
     });
 });
+
+Route::prefix("students")->group(function(){
+    Route::post('/', [StudentController::class, "store"])->name("students.store");
+
+    Route::middleware(["AlreadyLoggedStudent"])->group(function(){
+        Route::post('login', [StudentController::class, "login"])->name("students.login");
+    });
+});
