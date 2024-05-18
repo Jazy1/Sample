@@ -10,7 +10,7 @@
 				<!-- ************************ Header **************************** -->
 				<header class="dashboard-header">
 					<div class="d-flex align-items-center justify-content-end">
-						<h4 class="m0 d-none d-lg-block">Teachers</h4>
+						<h4 class="m0 d-none d-lg-block">Teacher</h4>
 						<button class="dash-mobile-nav-toggler d-block d-md-none me-auto">
 							<span></span>
 						</button>
@@ -82,41 +82,34 @@
 				<h2 class="main-title d-block d-lg-none">Add New Property</h2>
 
 				<div class="bg-white card-box border-20">
-                    <h4 class="dash-title-three">Study Material</h4>
+                    <h4 class="dash-title-three">Create Classroom</h4>
                     <!-- /.dash-input-wrapper -->
                     <div class="dash-input-wrapper mb-30">
-                        <label for="">Content*</label>
-                        <textarea class="size-lg" placeholder="Write about property..."></textarea>
+                        <label for="name">Teacher Name*</label>
+                        <input type="text" id="name" name="name" placeholder="Write Your name ...">
                     </div>
 
-				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three">Photo & Video Attachment</h4>
-                    <div class="dash-input-wrapper mb-20">
-                        <label for="">File Attachment*</label>
+                    <div class="dash-input-wrapper mb-30">
+                        <label for="datetime">Set Date & Time*</label>
+                        <input type="datetime-local" id="datetime" name="datetime" placeholder="Write Your name ...">
+                    </div>
 
-                        <div class="attached-file d-flex align-items-center justify-content-between mb-15">
-                            <span>PorpertyImage_01.jpg</span>
-                            <a href="#" class="remove-btn"><i class="bi bi-x"></i></a>
+
+                        <div class="dash-input-wrapper mb-30">
+                            <label for="course-title">Course Title*</label>
+                            <input type="text" id="text" name="coursetitle" placeholder="Write Your course name ...">
                         </div>
-						<div class="attached-file d-flex align-items-center justify-content-between mb-15">
-                            <span>PorpertyImage_02.jpg</span>
-                            <a href="#" class="remove-btn"><i class="bi bi-x"></i></a>
-                        </div>
+
+                    <div class="dash-input-wrapper mb-30">
+                        <label for="lecture-Descriptions">lecture description*</label>
+                        <textarea class="size-lg" name="lecturedescriptions" placeholder="Write about your todays lecture description..."></textarea>
                     </div>
-                    <!-- /.dash-input-wrapper -->
-                    <div class="dash-btn-one d-inline-block position-relative me-3">
-                        <i class="bi bi-plus"></i>
-                        Upload File
-                        <input type="file" id="uploadCV" name="uploadCV" placeholder="">
+
+                    <div class="button-group d-inline-flex align-items-center mt-30">
+                        <a href="#" class="dash-btn-two tran3s me-3">Submit</a>
+                        <a href="#" class="dash-cancel-btn tran3s">Cancel</a>
                     </div>
-                    <small>Upload file .jpg,  .png,  .mp4</small>
-				</div>
 				<!-- /.card-box -->
-
-                <div class="button-group d-inline-flex align-items-center mt-30">
-					<a href="#" class="dash-btn-two tran3s me-3">Submit</a>
-					<a href="#" class="dash-cancel-btn tran3s">Cancel</a>
-				</div>
 
 			</div>
 		</div>

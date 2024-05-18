@@ -11,3 +11,11 @@ Route::get('/addquiz', function () {
 Route::get('/teacher', function () {
     return view('teacher.content');
 });
+
+Route::get('/create-classroom', function () {
+    return view('teacher.classroom');
+});
+
+Route::get('/upload-posts', function () {
+    return view('teacher.post');
+});

@@ -53,7 +53,7 @@
 							</ul>
 						</div>
 						<div class="d-none d-md-block me-3">
-							<a href="add-property.html" class="btn-two"><span>Add Listing</span> <i class="fa-thin fa-arrow-up-right"></i></a>
+							<a href="add-property.html" class="btn-two"><span>Logout</span> <i class="fa-thin fa-arrow-up-right"></i></a>
 						</div>
 						<div class="user-data position-relative">
 							<button class="user-avatar online position-relative rounded-circle dropdown-toggle" type="button" id="profile-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
@@ -82,12 +82,12 @@
 				<h2 class="main-title d-block d-lg-none">Add New Property</h2>
 
 				<div class="bg-white card-box border-20">
-                    <h4 class="dash-title-three">Study Material</h4>
+                    <h4 class="dash-title-three">Create Post</h4>
                     <!-- /.dash-input-wrapper -->
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Content*</label>
                         <textarea class="size-lg" placeholder="Write about property..."></textarea>
-                    </div>
+                </div>
 
 				<div class="bg-white card-box border-20 mt-40">
 					<h4 class="dash-title-three">Photo & Video Attachment</h4>
@@ -113,7 +113,15 @@
 				</div>
 				<!-- /.card-box -->
 
-                <div class="button-group d-inline-flex align-items-center mt-30">
+                <div class="dash-input-wrapper mb-30">
+                    <label for="">Objects*</label>
+                    <select class="nice-select" name="objects">
+                        <option value="Public">Public</option>
+                        <option value="Specific">Specific</option>
+                    </select>
+                </div>
+
+				<div class="button-group d-inline-flex align-items-center mt-30">
 					<a href="#" class="dash-btn-two tran3s me-3">Submit</a>
 					<a href="#" class="dash-cancel-btn tran3s">Cancel</a>
 				</div>
