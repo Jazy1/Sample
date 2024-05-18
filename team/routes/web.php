@@ -33,7 +33,7 @@ Route::get('/upload-posts', function () {
 
 Route::post('/upload-posts', [TeacherController::class, 'create']);
 
-
+Route::get('/Logout', [TeacherController::class, 'Logout']);
 
 // student route
 Route::get('/Join-classroom', function () {
@@ -59,13 +59,7 @@ Route::prefix("teachers")->group(function(){
     });
 });
 
-Route::prefix("students")->group(function(){
-    Route::post('/', [StudentController::class, "store"])->name("students.store");
 
-    Route::middleware(["AlreadyLoggedStudent"])->group(function(){
-        Route::post('login', [StudentController::class, "login"])->name("students.login");
-    });
-});
 Route::get('/chat', function () {
     return view('chatingMeeting');
 });
