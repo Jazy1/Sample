@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('teacher_content', function (Blueprint $table) {
             $table->id();
+
+            $table->string('name');
+            $table->string('classroom');
+            $table->string('post');
+            $table->string('registrationNo');
+
             $table->timestamps();
         });
     }
