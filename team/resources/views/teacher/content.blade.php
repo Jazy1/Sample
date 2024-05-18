@@ -213,7 +213,7 @@
 				<h2 class="main-title d-block d-lg-none">Add New Property</h2>
 
 				<div class="bg-white card-box border-20">
-                    <h4 class="dash-title-three">Overview</h4>
+                    <h4 class="dash-title-three">aaa</h4>
                     <div class="dash-input-wrapper mb-30">
                         <label for="">Property Title*</label>
                         <input type="text" placeholder="Your Property Name">
