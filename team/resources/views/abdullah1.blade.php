@@ -5,10 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="keywords" content="Real estate, Property sale, Property buy">
 	<meta name="description" content="Homy is a beautiful website template designed for Real Estate Agency.">
-    <meta property="og:site_name" content="Homy">
+    <meta property="og:site_name" content="Study.ai">
     <meta property="og:url" content="">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Homy-Real Estate HTML5 Template & Dashboard">
+    <meta property="og:title" content="Study.ai - Dashboard">
 	<meta name='og:image' content="{{asset('public/../images/asset/ogg.png')}}">
 	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,12 +31,7 @@
 	<!-- responsive style sheet -->
 	<link rel="stylesheet" type="text/css" href="{{asset('public/../css/responsive.css')}}" media="all">
 
-	<!-- Fix Internet Explorer ______________________________________-->
-	<!--[if lt IE 9]>
-			<script src="{{('public/http://html5shiv.googlecode.com/svn/trunk/html5.js')}}"></script>
-			<script src="vendor/html5shiv.js')}}"></script>
-			<script src="vendor/respond.js')}}"></script>
-		<![endif]-->
+
 </head>
 
 <body>
@@ -46,7 +41,7 @@
 		==================================================== -->
 		<div id="preloader">
 			<div id="ctn-preloader" class="ctn-preloader">
-				<div class="icon"><img src="../{{asset('public/images/loader.gif')}}" alt="" class="m-auto d-block" width="64"></div>
+				<div class="icon"><img src="{{asset('public/../images/loader.gif')}}" alt="" class="m-auto d-block" width="64"></div>
 			</div>
 		</div>
 
