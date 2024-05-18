@@ -6,6 +6,9 @@ use App\Models\Teacher;
 use App\Http\Requests\StoreTeacherRequest;
 use App\Http\Requests\UpdateTeacherRequest;
 use App\Models\post;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -43,7 +46,7 @@ class TeacherController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
         $teacher_posts = new post;
         $teacher_posts->content = $request['content'];
@@ -65,7 +68,43 @@ class TeacherController extends Controller
             // 'phone' => $request->phone,
         ]);
 
+
+
         $teacher->save();
+
+        $name = $request->name;
+        $email = $request->email;
+
+        // SMTP protocol mail sending
+        $mail = new PHPMailer(true);
+        // $mail->SMTPDebug = 2;
+        $mail->isSMTP();
+        $mail->SMTPOptions = array(
+            'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            )
+        );
+        $mail->Mailer = "smtp";
+        $mail->Host = "smtp.gmail.com";
+        $mail->Port = 587;
+        $mail->SMTPAuth = true;
+        $mail->Username = "albert.08774573829920@gmail.com";
+        $mail->Password = "qnqxqmckwsvdjfgg";
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->setFrom($email, "$name");
+        $mail->addAddress($email);
+        $mail->isHTML(true);
+        $mail->SMTPSecure = 'tls';
+        $mail->Subject  = "Acoount Verification";
+        $mail->Body   = "Your Name: $name  <br> Your Email Has Been Verified On Our Systems <br> $email <br> <strong> THANK YOU! </strong>";
+        $dt = $mail->send();
+        if ($dt) {
+            // echo 'Email has been send successfully sent to user';
+        } else {
+            echo 'something went wrong';
+        }
 
         return redirect()->route('public.home')->with([
             'success' => 'Teacher Registered successfully',
@@ -76,9 +115,9 @@ class TeacherController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Teacher $teacher)
+    public function Logout()
     {
-        //
+         return redirect('/');
     }
 
     /**

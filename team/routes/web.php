@@ -33,7 +33,7 @@ Route::get('/upload-posts', function () {
 
 Route::post('/upload-posts', [TeacherController::class, 'create']);
 
-
+Route::get('/Logout', [TeacherController::class, 'Logout']);
 
 // student route
 Route::get('/Join-classroom', function () {
