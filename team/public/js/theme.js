@@ -23,7 +23,11 @@
       });
 
       // --------------------- Add .active class to current navigation based on URL
+<<<<<<< HEAD
+      var pgurl = window.location.href.substr(window.location.href.lastIndexOf("https://html.creativegigstf.com/")+1);
+=======
       var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+>>>>>>> a41b019b999964254b80f52e78c9cf5911d2fd02
       $(".navbar-nav > li  a").each(function(){
       if($(this).attr("href") == pgurl || $(this).attr("href") == '' )
       $(this).addClass("active");
@@ -452,7 +456,11 @@
 
                 // if the validator does not prevent form submit
                 if (!e.isDefaultPrevented()) {
+<<<<<<< HEAD
+                    var url = "inc/contact.html";
+=======
                     var url = "inc/contact.php";
+>>>>>>> a41b019b999964254b80f52e78c9cf5911d2fd02
 
                     // POST values in the background the the script URL
                     $.ajax({

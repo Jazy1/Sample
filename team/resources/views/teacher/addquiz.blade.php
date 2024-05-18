@@ -77,7 +77,7 @@
 						<li><div class="nav-title">Listing</div></li>
 						<li class="plr"><a href="properties-list.html" class="d-flex w-100 align-items-center">
 							<img src="{{asset('public/images/icon/icon_6.svg')}}" alt="">
-							<span>My Properties</span>
+							<span>My Quizes</span>
 						</a></li>
 						<li class="plr"><a href="add-Quiz.html" class="d-flex w-100 align-items-center active">
 							<img src="{{asset('public/images/icon/icon_7_active.svg')}}" alt="">
