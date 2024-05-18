@@ -37,7 +37,7 @@ class StudentController extends Controller
             'password' => Hash::make($request->password),
             'phone' => $request->phone,
         ]);
-    
+
         $student->save();
 
         return redirect()->route('public.home')->with([

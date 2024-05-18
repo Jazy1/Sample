@@ -14,13 +14,13 @@ class TeacherController extends Controller
     public function login(Request $request){
         $email = $request->input('email');
         $password = $request->input('password');
-        
+
         $teacher = Teacher::where('email', $email)->first();
-    
+
         if ($teacher) {
             if (password_verify($password, $teacher->password)) {
                 session()->put(["LoggedTeacher" => $teacher->id]);
-                
+
                 return redirect()->route("teachers.dashboard");
 
             } else {
@@ -36,7 +36,7 @@ class TeacherController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -58,7 +58,7 @@ class TeacherController extends Controller
             'password' => Hash::make($request->password),
             // 'phone' => $request->phone,
         ]);
-    
+
         $teacher->save();
 
         return redirect()->route('public.home')->with([
