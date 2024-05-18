@@ -3,12 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="Real estate, Property sale, Property buy">
+	<meta name="keywords" content="Real estate, Quiz sale, Quiz buy">
 	<meta name="description" content="Homy is a beautiful website template designed for Real Estate Agency.">
-    <meta property="og:site_name" content="Study.ai">
-    <meta property="og:url" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Study.ai - Dashboard">
+    <meta Quiz="og:site_name" content="Study.ai">
+    <meta Quiz="og:url" content="">
+    <meta Quiz="og:type" content="website">
+    <meta Quiz="og:title" content="Study.ai - Dashboard">
 	<meta name='og:image' content="{{asset('public/../images/asset/ogg.png')}}">
 	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +23,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#0D1A1C">
 	<title>Study.ai - Add Quiz</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" sizes="56x56" href="../{{asset('public/images/fav-icon/icon.png')}}">
+	<link rel="icon" type="image/png" sizes="56x56" href="{{asset('public/../images/fav-icon/icon.png')}}">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="{{asset('public/../css/bootstrap.min.css')}}" media="all">
 	<!-- Main style sheet -->
@@ -39,11 +39,11 @@
 		<!-- ===================================================
 			Loading Transition
 		==================================================== -->
-		<div id="preloader">
+		{{-- <div id="preloader">
 			<div id="ctn-preloader" class="ctn-preloader">
 				<div class="icon"><img src="{{asset('public/../images/loader.gif')}}" alt="" class="m-auto d-block" width="64"></div>
 			</div>
-		</div>
+		</div> --}}
 
 		<!--
 		=============================================
@@ -54,7 +54,7 @@
 			<div class="position-relative">
 				<div class="logo d-md-block d-flex align-items-center justify-content-between plr bottom-line pb-30">
 					<a href="dashboard-index.html">
-						<img src="../{{asset('public/images/logo/logo_01.svg')}}" alt="">
+						<img src="{{asset('public/../images/logo/logo_01.svg')}}" alt="">
 					</a>
 					<button class="close-btn d-block d-md-none"><i class="fa-light fa-circle-xmark"></i></button>
 				</div>
@@ -88,7 +88,7 @@
 							<img src="{{asset('public/images/icon/icon_6.svg')}}" alt="">
 							<span>My Properties</span>
 						</a></li>
-						<li class="plr"><a href="add-property.html" class="d-flex w-100 align-items-center active">
+						<li class="plr"><a href="add-Quiz.html" class="d-flex w-100 align-items-center active">
 							<img src="{{asset('public/images/icon/icon_7_active.svg')}}" alt="">
 							<span>New Quiz</span>
 						</a></li>
@@ -137,420 +137,57 @@
 				<header class="dashboard-header">
 					<div class="d-flex align-items-center justify-content-end">
 						<h4 class="m0 d-none d-lg-block">Add New Quiz</h4>
-						<button class="dash-mobile-nav-toggler d-block d-md-none me-auto">
-							<span></span>
-						</button>
-						<form action="#" class="search-form ms-auto">
-							<input type="text" placeholder="Search here..">
-							<button><img src="{{asset('public/../images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_43.svg')}}" alt="" class="lazy-img m-auto"></button>
-						</form>
-						<div class="profile-notification position-relative dropdown-center ms-3 ms-md-5 me-4">
-							<button class="noti-btn dropdown-toggle" type="button" id="notification-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-								<img src="{{asset('public/../images/lazy.svg')}}" data-src=""{{asset('public/images/icon/icon_11.svg')}}" alt="" class="lazy-img')}}">
-								<div class="badge-pill"></div>
-							</button>
-							<ul class="dropdown-menu" aria-labelledby="notification-dropdown">
-								<li>
-									<h4>Notification</h4>
-									<ul class="style-none notify-list">
-										<li class="d-flex align-items-center unread">
-											<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_36.svg')}}" alt="" class="lazy-img icon">
-											<div class="flex-fill ps-2">
-												<h6>You have 3 new mails</h6>
-												<span class="time">3 hours ago</span>
-											</div>
-										</li>
-										<li class="d-flex align-items-center">
-											<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_37.svg')}}" alt="" class="lazy-img icon">
-											<div class="flex-fill ps-2">
-												<h6>Your listing post has been approved</h6>
-												<span class="time">1 day ago</span>
-											</div>
-										</li>
-										<li class="d-flex align-items-center unread">
-											<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_38.svg')}}" alt="" class="lazy-img icon">
-											<div class="flex-fill ps-2">
-												<h6>Your meeting is cancelled</h6>
-												<span class="time">3 days ago</span>
-											</div>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="d-none d-md-block me-3">
-							<a href="add-property.html" class="btn-two"><span>Add Listing</span> <i class="fa-thin fa-arrow-up-right"></i></a>
-						</div>
-						<div class="user-data position-relative">
-							<button class="user-avatar online position-relative rounded-circle dropdown-toggle" type="button" id="profile-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-								<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/avatar_01.jpg')}}" alt="" class="lazy-img">
-							</button>
-							<!-- /.user-avatar -->
-							<div class="user-name-data">
-								<ul class="dropdown-menu" aria-labelledby="profile-dropdown">
-									<li>
-										<a class="dropdown-item d-flex align-items-center" href="profile.html"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_23.svg')}}" alt="" class="lazy-img"><span class="ms-2 ps-1">Profile</span></a>
-									</li>
-									<li>
-										<a class="dropdown-item d-flex align-items-center" href="account-settings.html"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_24.svg')}}" alt="" class="lazy-img"><span class="ms-2 ps-1">Account Settings</span></a>
-									</li>
-									<li>
-										<a class="dropdown-item d-flex align-items-center" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_25.svg')}}" alt="" class="lazy-img"><span class="ms-2 ps-1">Delete Account</span></a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- /.user-data -->
 					</div>
 				</header>
 				<!-- End Header -->
 
-				<h2 class="main-title d-block d-lg-none">Add New Property</h2>
+				<h2 class="main-title d-block d-lg-none">Add New Quiz</h2>
 
 				<div class="bg-white card-box border-20">
                     <h4 class="dash-title-three">Overview</h4>
                     <div class="dash-input-wrapper mb-30">
-                        <label for="">Property Title*</label>
-                        <input type="text" placeholder="Your Property Name">
+                        <label for="">Quiz Title*</label>
+                        <input type="text" placeholder="Your Quiz Name">
                     </div>
                     <!-- /.dash-input-wrapper -->
                     <div class="dash-input-wrapper mb-30">
-                        <label for="">Description*</label>
-                        <textarea class="size-lg" placeholder="Write about property..."></textarea>
-                    </div>
-                    <!-- /.dash-input-wrapper -->
-                    <div class="row align-items-end">
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Category*</label>
-                                <select class="nice-select">
-									<option value="1">Apartments</option>
-									<option value="2">Condos</option>
-									<option value="3">Houses</option>
-									<option value="4">Industrial</option>
-									<option value="6">Villas</option>
-								</select>
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Listed in*</label>
-                                <select class="nice-select">
-									<option>All Listing</option>
-									<option>Buy</option>
-                                    <option>Sell</option>
-                                    <option>Rent</option>
-								</select>
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-								<label for="">Price*</label>
-                                <input type="text" placeholder="Your Price">
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-								<label for="">Yearly Tax Rate*</label>
-                                <input type="text" placeholder="Tax Rate">
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
+                        <label for="">Rules*</label>
+                        <textarea class="size-lg" placeholder="Write about Quiz..."></textarea>
                     </div>
                 </div>
-				<!-- /.card-box -->
-				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three">Listing Details</h4>
-					<div class="row align-items-end">
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Size in ft*</label>
-                                <input type="text" placeholder="Ex: 3,210 sqft">
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Bedrooms*</label>
-                                <select class="nice-select">
-									<option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-								</select>
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Bathrooms*</label>
-                                <select class="nice-select">
-									<option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-								</select>
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-						<div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Kitchens*</label>
-                                <select class="nice-select">
-									<option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-								</select>
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-						<div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Garages</label>
-                                <select class="nice-select">
-									<option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-								</select>
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-						<div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Garage Size</label>
-                                <input type="text" placeholder="Ex: 1,230 sqft">
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-						<div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Year Built*</label>
-                                <input type="text" placeholder="Type Year">
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-                        <div class="col-md-6">
-                            <div class="dash-input-wrapper mb-30">
-                                <label for="">Floors No*</label>
-                                <select class="nice-select">
-									<option value="0">Ground</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-								</select>
-                            </div>
-                            <!-- /.dash-input-wrapper -->
-                        </div>
-						<div class="col-12">
-							<div class="dash-input-wrapper">
-								<label for="">Description*</label>
-								<textarea class="size-lg" placeholder="Write about property..."></textarea>
-							</div>
-							<!-- /.dash-input-wrapper -->
-						</div>
-                    </div>
-				</div>
-				<!-- /.card-box -->
 
-				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three">Photo & Video Attachment</h4>
-                    <div class="dash-input-wrapper mb-20">
-                        <label for="">File Attachment*</label>
+                <div class="bg-white card-box border-20">
+                    <h4 class="dash-title-three">Questions</h4>
 
-                        <div class="attached-file d-flex align-items-center justify-content-between mb-15">
-                            <span>PorpertyImage_01.jpg')}}</span>
-                            <a href="#" class="remove-btn"><i class="bi bi-x"></i></a>
-                        </div>
-						<div class="attached-file d-flex align-items-center justify-content-between mb-15">
-                            <span>PorpertyImage_02.jpg')}}</span>
-                            <a href="#" class="remove-btn"><i class="bi bi-x"></i></a>
-                        </div>
+                    <div class="dash-input-wrapper mb-30">
+                        <label for="">Question*</label>
+                        <input type="text" placeholder="Your Quiz Name" name="question">
                     </div>
                     <!-- /.dash-input-wrapper -->
-                    <div class="dash-btn-one d-inline-block position-relative me-3">
-                        <i class="bi bi-plus"></i>
-                        Upload File
-                        <input type="file" id="uploadCV" name="uploadCV" placeholder="">
+                    <div class="dash-input-wrapper mb-30">
+                        <label for="">Qption1</label>
+                        <input type="text" class="" name="">
+
+                        <label for="">Qption2</label>
+                        <input type="text" class="" name="">
+
+                        <label for="">Qption3</label>
+                        <input type="text" class="" name="">
+
+                        <label for="">Qption4</label>
+                        <input type="text" class="" name="">
                     </div>
-                    <small>Upload file .jpg')}},  .png')}},  .mp4</small>
-				</div>
-				<!-- /.card-box -->
 
-				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three m0 pb-5">Select Amenities</h4>
-					<ul class="style-none d-flex flex-wrap filter-input">
-						<li>
-							<input type="checkbox" name="Amenities" value="01">
-							<label>A/C & Heating</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="02" placeholder="">
-							<label>Garages</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="03">
-							<label>Swimming Pool</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="04">
-							<label>Parking</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="05">
-							<label>Lake View</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="06">
-							<label>Garden</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="07">
-							<label>Disabled Access</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="08">
-							<label>Pet Friendly</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="09">
-							<label>Ceiling Height</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="10">
-							<label>Outdoor Shower</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="11">
-							<label>Refrigerator</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="12">
-							<label>Fireplace</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="13">
-							<label>Wifi</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="14">
-							<label>TV Cable</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="15">
-							<label>Barbeque</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="16">
-							<label>Laundry</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="17">
-							<label>Dryer</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="18">
-							<label>Lawn</label>
-						</li>
-						<li>
-							<input type="checkbox" name="Amenities" value="19">
-							<label>Elevator</label>
-						</li>
-					</ul>
-				</div>
-				<!-- /.card-box -->
+                </div>
 
-				<div class="bg-white card-box border-20 mt-40">
-					<h4 class="dash-title-three">Address & Location</h4>
-					<div class="row">
-						<div class="col-12">
-							<div class="dash-input-wrapper mb-25">
-								<label for="">Address*</label>
-								<input type="text" placeholder="145/A, Ranchview">
-							</div>
-							<!-- /.dash-input-wrapper -->
-						</div>
-						<div class="col-lg-4">
-							<div class="dash-input-wrapper mb-25">
-								<label for="">Country*</label>
-								<select class="nice-select">
-									<option value="0">Select Country</option>
-									<option>Afghanistan</option>
-									<option>Albania</option>
-									<option>Algeria</option>
-									<option>Andorra</option>
-									<option>Angola</option>
-									<option>Antigua and Barbuda</option>
-									<option>Argentina</option>
-									<option>Armenia</option>
-									<option>Australia</option>
-									<option>Austria</option>
-									<option>Azerbaijan</option>
-									<option>Bahamas</option>
-									<option>Bahrain</option>
-									<option>Bangladesh</option>
-									<option>Barbados</option>
-									<option>Belarus</option>
-									<option>Belgium</option>
-									<option>Belize</option>
-									<option>Benin</option>
-									<option>Bhutan</option>
-								</select>
-							</div>
-							<!-- /.dash-input-wrapper -->
-						</div>
-						<div class="col-lg-4">
-							<div class="dash-input-wrapper mb-25">
-								<label for="">City*</label>
-								<select class="nice-select">
-									<option value="0">Select City</option>
-									<option>Dhaka</option>
-									<option>Tokyo</option>
-									<option>Delhi</option>
-									<option>Shanghai</option>
-									<option>Mumbai</option>
-									<option>Bangalore</option>
-								</select>
-							</div>
-							<!-- /.dash-input-wrapper -->
-						</div>
-						<div class="col-lg-4">
-							<div class="dash-input-wrapper mb-25">
-								<label for="">State*</label>
-								<select class="nice-select">
-									<option value="0">Select State</option>
-									<option>Dhaka</option>
-									<option>Tokyo</option>
-									<option>Delhi</option>
-									<option>Shanghai</option>
-									<option>Mumbai</option>
-									<option>Bangalore</option>
-								</select>
-							</div>
-							<!-- /.dash-input-wrapper -->
-						</div>
-						<div class="col-12">
-							<div class="dash-input-wrapper mb-25">
-								<label for="">Map Location*</label>
-								<div class="position-relative">
-									<input type="text" placeholder="XC23+6XC, Moiran, N105">
-									<button class="location-pin tran3s"><img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_16.svg')}}" alt="" class="lazy-img m-auto"></button>
-								</div>
-								<div class="map-frame mt-30">
+                <div class="button-group d-inline-flex align-items-center mt-30">
+					<a href="#" class="dash-btn-two tran3s me-3">Add Question</a>
 
-								</div>
-							</div>
-							<!-- /.dash-input-wrapper -->
-						</div>
-					</div>
 				</div>
-				<!-- /.card-box -->
+                <br>
+
 				<div class="button-group d-inline-flex align-items-center mt-30">
-					<a href="#" class="dash-btn-two tran3s me-3">Submit Property</a>
+					<a href="#" class="dash-btn-two tran3s me-3">Submit Quiz</a>
 					<a href="#" class="dash-cancel-btn tran3s">Cancel</a>
 				</div>
 			</div>
@@ -564,7 +201,7 @@
                 <div class="container">
                     <div class="remove-account-popup text-center modal-content">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-						<img src="../{{asset('public/images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_22.svg')}}" alt="" class="lazy-img m-auto">
+						<img src="{{asset('public/../images/lazy.svg')}}" data-src="{{asset('public/images/icon/icon_22.svg')}}" alt="" class="lazy-img m-auto">
 						<h2>Are you sure?</h2>
 						<p>Are you sure to delete your account? All data will be lost.</p>
 						<div class="button-group d-inline-flex justify-content-center align-items-center pt-15">
