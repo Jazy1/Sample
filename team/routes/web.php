@@ -66,3 +66,6 @@ Route::prefix("students")->group(function(){
         Route::post('login', [StudentController::class, "login"])->name("students.login");
     });
 });
+Route::get('/chat', function () {
+    return view('chatingMeeting');
+});
